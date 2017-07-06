@@ -1,3 +1,4 @@
+
 package com.hodor.simple;
 
 /**
@@ -5,7 +6,7 @@ package com.hodor.simple;
  * A Program to check if strings are rotations of each other or not Given a
  * string s1 and a string s2, write a snippet to say whether s2 is a rotation of
  * s1 using only one call to strstr routine? (eg given s1 = ABCD and s2 = CDAB,
- * return true, given s1 = ABCD, and s2 = ACBD , return false) Write a program
+ * return true, given s1 = ABCD, and s2 = ACBD , return false). Write a program
  * to check if the two strings are rotationaly equals. The rotaionaly equals
  * string can be defined as follows
  * 
@@ -35,7 +36,7 @@ public class CheckStringAreRotationalyEquals {
 			areRotaionalyEquals = Boolean.TRUE;
 		} else {
 			if (s1 != null && s2 != null) {
-				// if both the strings are not null and not equls then check for
+				// if both the strings are not null then check for
 				// are they rotaionaly equals
 				if (s1.isEmpty() && s2.isEmpty()) {
 					areRotaionalyEquals = Boolean.TRUE;
@@ -122,7 +123,7 @@ public class CheckStringAreRotationalyEquals {
 		result = areRotaionalyEquals(null, null);
 		System.out.println(result);
 
-		result = areRotaionalyEquals("sham", "amhs");
+		result = areRotaionalyEquals("hodor", "orhod");
 		System.out.println(result);
 
 		result = areRotaionalyEquals("sh", "hs");
